@@ -1,364 +1,64 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Website Của Hồ Nam</title>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <header>
-            <h1 id="logo">NamTube</h1>
-            <button id="timkiem">Tìm kiếm</button>
-            <span><input id="sreach" type="text"/></span>
-            <span id="bang">
-                <table border="1vw" cellpadding="1" cellspacing="0">
-                    <thead>
-                        <th>Tên</th>
-                        <th>Lớp</th>
-                    </thead>
-                    <tbody>
-                        <td>Huỳnh Hồ Nam</td>
-                        <td>CTT14CĐ3A</td>
-                    </tbody>
-                </table>
-            </span>
-            <style>
-            #logo{
-                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                font-size: 2vw;
-                position: absolute;
-                top: -1vw;
-                left: 3.5vw;
-            }
-            #sreach{
-                width: 35vw;
-                height: 1.5vw;
-                position: relative;
-                top: 0.25vw;
-                left: 15vw;
-            }
-            #bang{
-                font-size: 0.8vw;
-                position: absolute;
-                top: 0.5vw;
-                left: 80vw;
-            }
-            #timkiem{
-                width: 5vw;
-                height: 2vw;
-                position: relative;
-                left: 56vw;
-                top: 0.2vw;
-            }
-            </style>
-        </header>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./assets/style.css"> -->
+    <link rel="stylesheet" href="./assets/fixstyle.css">
+    <title>Hồ Nam Website</title>
+</head>
+<body>
+    <div id="background"></div>
 
-        <section>
-            <div><iframe id="video" src="https://www.youtube.com/embed/1pquvJRgIMY" frameborder="0"></iframe></div>
-            <div id="tag">#AiNo #Masew #KhoiVu</div>
-            <div id="tieudevideo">Ái Nộ - Masew x Khoi Vu</div>
-            <div id="view">4.457.935 lượt xem - Đã công chiếu vào 30 thg 8, 2021</div> 
-            <span id="like">
-                <img class="likeordislike" src="https://upload.wikimedia.org/wikipedia/commons/1/13/Facebook_like_thumb.png" alt="nút like">
-                <input name="like" type="radio" >
-                <img class="likeordislike" src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Not_facebook_not_like_thumbs_down.png" alt="nút dislike">
-                <input name="like" type="radio">
-            </span>
-            <div class="gach">_________________________________________________________________________________________________________________________</div>
-            <p>
-                <div id="logomasew"></div>
-                <div id="namemasew">Masew</div>
-                <div id="dk">2,27 Tr người đăng ký</div>
-                <div id="mota">
-                    Tiếp tục là sản phẩm thứ 2 nằm trong  album của mình . Mong rằng mọi người sẽ thích nó !!!<br><br>
-                    @Masew
-                    <ul>
-                            <li>Facebook: <a target="_blank" href="https://www.facebook.com/masewprod">https://www.facebook.com/masewprod</a></li>
-                            <li>Instagram: <a target="_blank" href="https://www.instagram.com/masewproducer/">https://www.instagram.com/masewproducer/</a></li>
-                    </ul>
-                    @Khoi Vu
-                    <ul>
-                        <li>Facebook: <a target="_blank" href="https://www.facebook.com/khoivu.pham99">https://www.facebook.com/khoivu.pham99 </a></li>
-                        <li>Instagram: <a target="_blank" href="https://www.instagram.com/lennie.99">https://www.instagram.com/lennie.99</a></li>
-                    </ul>
-                </div>
-            </p>
-            <style>
-                #video{
-                width: 60vw;
-                height: 34vw;
-                position: relative;
-                top: 2vw;
-                left: 5vw;
-                }
-                #tag{
-                font-size: 0.8vw;
-                color: blue;
-                position: relative;
-                top: 2.5vw;
-                left: 5vw;
-                }
-                #tieudevideo{
-                position: relative;
-                top: 3vw;
-                left: 5vw;
-                font-size: 1.1vw;
-                }
-                #view{
-                font-size: 0.8vw;
-                position: relative;
-                top: 3.5vw;
-                left: 5vw;
-                color:teal;
-                }
-                #like{
-                font-size: 1vw;
-                top: 2vw;
-                left: 50vw;
-                position: relative;
-                }
-                #logomasew{
-                width: 3vw;
-                height: 3vw;
-                background-color: black;
-                border-radius: 50%;
-                position: relative;
-                top: 3vw;
-                left: 5vw;
-                }
-                #namemasew{
-                font-weight: bold;
-                font-size: 1vw;
-                position: relative;
-                left: 8.5vw;
-                top: 0.2vw;
-                }
-                #dk{
-                font-size: 0.8vw;
-                position: relative;
-                left: 8.5vw;
-                top: 0.5vw;
-                color: teal;
-                }
-                #mota{
-                font-size: 0.8vw;
-                left: 8.5vw;
-                top: 2.5vw;
-                position: relative;
-                }
-                .likeordislike{
-                    width: 2vw;
-                    height: 2vw;
-                }
-            </style>
-            <div class="gach">_________________________________________________________________________________________________________________________</div>     
-        </section>
+    <!-- Begin: header -->
+    <div id="header">
+        <div id="nav">
+            <a href=""><img class="logo" src="https://i.postimg.cc/HW9d0c9n/logo.png" alt=""></a>
+            <ul class="subnav">
+            <li>Trang Chủ</li>
+            <li>Lập Trình</li>
+            <li>Giới Thiệu</li>
+            <li>Thủ Thuật</li>
+            <li>Liên Hệ</li>
+        </ul>
+        </div>
+    </div>
+    <!-- End: header -->
 
-        <footer>
-            <div id="logokhach1" style="background-color: tomato;"></div>
-            <span id="le1t"style="font-weight: bold;">Nước mắm đóng chai <br/> </span>
-            <span id="le1d">Nhạc hay quá nghe hết nước chấm</span>
-        <div id="logokhach2" style="background-color: gold;"></div>
-            <span id="le2t"style="font-weight: bold;">An Vũ<br/> </span>
-            <span id="le2d">Nghiện thực sự</span>
-        <div id="logokhach3" style="background-color: violet;"></div>
-            <span id="le3t"style="font-weight: bold;">Nhà bao việc<br/> </span>
-            <div id="le3d">Tới công chiện thiệt chớ!!!</div>
-        <style>
-            #logokhach1{
-                width: 3vw;
-                height: 3vw;
-                border-radius: 50%;
-                position: relative;
-                top: 4vw;
-                left: 5vw;
-            }
-            #le1t{
-                font-size: 0.8vw;
-                top: 1vw;
-                left: 8.5vw;
-                position: relative;
-            }
-            #le1d{
-                font-size: 0.8vw;
-                top: 1vw;
-                left: 8.5vw;
-                position: relative; 
-            }
-            #logokhach2{
-                width: 3vw;
-                height: 3vw;
-                border-radius: 50%;
-                position: relative;
-                top: 4vw;
-                left: 5vw;
-            }
-            #le2t{
-                font-size: 0.8vw;
-                top: 1vw;
-                left: 8.5vw;
-                position: relative;
-            }
-            #le2d{
-                font-size: 0.8vw;
-                top: 1vw;
-                left: 8.5vw;
-                position: relative; 
-            }
-            #logokhach3{
-                width: 3vw;
-                height: 3vw;
-                border-radius: 50%;
-                position: relative;
-                top: 4vw;
-                left: 5vw;
-            }
-            #le3t{
-                font-size: 0.8vw;
-                top: 1vw;
-                left: 8.5vw;
-                position: relative;
-            }
-            #le3d{
-                font-size: 0.8vw;
-                top: 1vw;
-                left: 8.5vw;
-                position: relative; 
-            }
-        </style>
-        </footer>
+    <!-- Begin: content -->
+    <div id="content">
+        <h1>Hồ Nam</h1><br>
+        <p class="p-last">
+            Tôi là Huỳnh Hồ Nam. Năm nay 19 tuổi.<br>
+            Hiện tại đang sinh sống và học tập ở Nha Trang.<br>
+            Tôi hiện đang học tại trường cao đẳng Kỹ Thuật Công Nghệ Nha Trang. <br>
+            mục tiêu trong tương lai của tôi là thành thạo kỹ năng lập trình website. 
+        </p><br><br>
+        <p class="sreach">
+            <img class="img-sreach" src="https://i.postimg.cc/vBdwfb15/sreach.png" alt="">
+        </p><br>
+
+        <h5>Gửi ý kiến của bạn về website</h5>
+        <div>
+            <button>
+                <span></span>
+                Inbox Me!!!
+            </button>
+        </div>
+        <!-- End: content -->
         
-        <!-- Phải -->
-        <span id="anh1"><a href="https://www.youtube.com/watch?v=KabeMVHgRLQ"><img class="coanh" src="https://i.ytimg.com/vi/KabeMVHgRLQ/maxresdefault.jpg"></a></span><br/>
-        <span id="anh2"><a href="https://www.youtube.com/watch?v=_8ldAdQd9WU"><img class="coanh" src="https://i.ytimg.com/vi/_8ldAdQd9WU/hqdefault.jpg"></a></span><br/>
-        <span id="anh3"><a href="https://www.youtube.com/watch?v=VOwgQ3LZSQ4&t=511s"><img class="coanh" src="https://i.ytimg.com/vi/VOwgQ3LZSQ4/maxresdefault.jpg"></a></span><br/>
-        <span id="anh4"><a href="https://www.youtube.com/watch?v=Y5asikkcHiQ"><img class="coanh" src="https://i.ytimg.com/vi/Y5asikkcHiQ/maxresdefault.jpg"></a></span><br/>
-        <span id="anh5"><a href="https://www.youtube.com/watch?v=w4l_FurvlbA"><img class="coanh" src="https://i.ytimg.com/vi/w4l_FurvlbA/maxresdefault.jpg"></a></span><br/>
-        <span id="anh6"><a href="https://www.youtube.com/watch?v=cySvm5tqL7Q"><img class="coanh" src="https://i.ytimg.com/vi/cySvm5tqL7Q/hqdefault.jpg"></a></span><br/>
-        <span id="anh7"><a href="https://www.youtube.com/watch?v=VhJY7gOpPyU"><img class="coanh" src="https://i.ytimg.com/vi/VhJY7gOpPyU/maxresdefault.jpg"></a></span><br/>
-        <span id="anh8"><a href="https://www.youtube.com/watch?v=--sE4P3Ng18"><img class="coanh" src="https://i.ytimg.com/vi/--sE4P3Ng18/hqdefault.jpg"></a></span><br/>
-        <span id="anh9"><a href="https://www.youtube.com/watch?v=XCv-l6-rWfE"><img class="coanh" src="https://i.ytimg.com/vi/XCv-l6-rWfE/maxresdefault.jpg"></a></span>
-
-        <div id="pchu1"> <span style="font-weight: bold;">Điêu Toa - Masew x Pháo</span><br/>Masew<br/>13.404.765 lượt xem<br/>1 năm trước</div>
-        <div id="pchu2"> <span style="font-weight: bold;">Cưới Thôi - Masew x Masiu x B Ray x TAP</span><br/>Masew<br/>9.062.699 lượt xem<br/>3 tuần trước</div>
-        <div id="pchu3"> <span style="font-weight: bold;">EDM Tik Tok ♫ Top Nhạc EDM Tik Tok Us - Uk Remix Gây Nghiện Được Yêu Thích Nhất 2021 ♫ KINZ MUSIC</span><br/>Kinz Music<br/>2.339.817 lượt xem<br/>4 tháng trước</div>
-        <div id="pchu4"> <span style="font-weight: bold;">Songs that make you feel powerful 🔥</span><br/>Rising Wave<br/>4.918.054 lượt xem<br/>8 tháng trước</div>
-        <div id="pchu5"> <span style="font-weight: bold;">Top 10 Bản Nhạc EDM Mix "Phiêu Du Hư Ảo" ♫ Nhạc Điện Tử Gây Nghiện Hay Nhất 2021 ♫ KINZ MUSIC</span><br/>KinZ Music<br/>226.973 lượt xem<br/>3 tháng trước</div>
-        <div id="pchu6"> <span style="font-weight: bold;">EDM Tik Tok ✗ Top 11 Nhạc EDM Tik Tok Us - Uk Remix Gây Nghiện Được Yêu Thích Nhất 2021 ✗ PNN EDM</span><br/>P.N.N EDM<br/>99.264 lượt xem<br/>3 tháng trước</div>
-        <div id="pchu7"> <span style="font-weight: bold;">ÉP DUYÊN | LONG NÓN LÁ X MASEW</span><br/>Masew<br/>920.823 lượt xem<br/>4 tháng trước</div>
-        <div id="pchu8"> <span style="font-weight: bold;">ĐỘ TỘC 2 - ĐỘ MIXI x PHÚC DU x PHÁO | Masew Remix</span><br/>Masew<br/>829.786 lượt xem<br/>1 tháng trước</div>
-        <div id="pchu9"> <span style="font-weight: bold;">Vì em là quả dâu tây (Cukak Remix) - BreakFast / DH, 151 GDucky, Minh | Tiktok Music</span><br/>CUKAK<br/>574.199 lượt xem<br/>6 tháng trước</div>
-
-        <style>
-            .coanh{
-                width: 13vw;
-                height: 7vw;
-            }
-            #anh1{
-                top: 5vw;
-                left: 68vw;
-                position:absolute;
-            }
-            #pchu1{
-                font-size: 0.9vw;
-                top: 5vw;
-                left: 82vw;
-                position: absolute;
-            }
-            #anh2{
-                top: 12.5vw;
-                left: 68vw;
-                position:absolute;
-            }
-            #pchu2{
-                font-size: 0.9vw;
-                top: 12.5vw;
-                left: 82vw;
-                position: absolute;
-            }
-            #anh3{
-                top: 20vw;
-                left: 68vw;
-                position:absolute;
-            }
-            #pchu3{
-                font-size: 0.9vw;
-                top: 20vw;
-                left: 82vw;
-                position: absolute;
-            }
-            #anh4{
-                top: 27.5vw;
-                left: 68vw;
-                position:absolute;
-            }
-            #pchu4{
-                font-size: 0.9vw;
-                top: 27.5vw;
-                left: 82vw;
-                position: absolute;
-            }
-            #anh5{
-                top: 35vw;
-                left: 68vw;
-                position:absolute;
-            }
-            #pchu5{
-                font-size: 0.9vw;
-                top: 35vw;
-                left: 82vw;
-                position: absolute;
-            }
-            #anh6{
-                top: 42.5vw;
-                left: 68vw;
-                position:absolute;
-            }
-            #pchu6{
-                font-size: 0.9vw;
-                top: 42.5vw;
-                left: 82vw;
-                position: absolute;
-            }
-            #anh7{
-                top: 50vw;
-                left: 68vw;
-                position:absolute;
-            }
-            #pchu7{
-                font-size: 0.9vw;
-                top: 50vw;
-                left: 82vw;
-                position: absolute;
-            }
-            #anh8{
-                top: 57.5vw;
-                left: 68vw;
-                position:absolute;
-            }
-            #pchu8{
-                font-size: 0.9vw;
-                top: 57.5vw;
-                left: 82vw;
-                position: absolute;
-            }
-            #anh9{
-                top: 65vw;
-                left: 68vw;
-                position:absolute;
-            }
-            #pchu9{
-                font-size: 0.9vw;
-                top: 65vw;
-                left: 82vw;
-                position: absolute;
-            }
-            .gach{
-            font-size: 1vw;
-            position: relative;
-            top: 3vw;
-            left: 5vw;
-            color:gray;
-        }
-        </style>
-    </body>
+    </div>
+        <!-- Begin: footer -->
+    <div id="footer">
+        <h1>Huỳnh Hồ Nam <br>
+            CTT14CD3A
+        </h1><br>
+        <p>
+            Website được tạo bởi Hồ Nam. Và mục đích là thực hành trong học tập <br>
+            Nếu có vấn đề gì về website thì liên hệ tôi <br>
+            Qua Facebook. Xin cảm ơn!!! </br>
+        </p>
+    </div>
+</body>
 </html>
