@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ Nam Website | Lập Trình</title>
+    <link rel="stylesheet" href="./assets/khoahoc-css2.css">
+</head>
+<body>
+    <div id="header">
+        <div id="nav">
+            <a href="https://huynhhonam4.github.io/Tuan-9/index.html"><img class="logo" src="https://i.postimg.cc/HW9d0c9n/logo.png" alt=""></a>
+        <ul class="subnav">
+            <a href="https://huynhhonam4.github.io/Tuan-9/index.html"><li>Trang Chủ</li></a>
+            <a href="https://huynhhonam4.github.io/Tuan-9/LapTrinh.html"><li>Lập Trình</li></a>
+            <li>Giới Thiệu</li>
+            <li>Thủ Thuật</li>
+            <li>Liên Hệ</li>
+        </ul>
+        </div>
+    </div>
+    <!-- End: header -->
+    <div id="content">
+        <h1>Các Thuộc Tính CSS Cơ Bản (Part 2)</h1>
+        <p>Tập hợp tất cả các thuộc tính css. Nó sẽ là một sổ tay hữu dụng để bạn tra cứu các thuộc tính css và cách sử dụng nó.</p>
+    
+        <h2>1. Thuộc Tính Font</h2>
+        <table border="1" cellpadding="100" cellspacing="1">
+            <thead>
+                <th>Thuộc Tính</th>
+                <th>Mô Tả Chức Năng</th>
+            </thead>
+            <tbody>
+                <td>@font-face</td>
+                <td>Một quy tắc cho phép các trang web tải và sử dụng các phông chữ khác với phông chữ “web-safe”</td>
+            </tbody>
+            <tbody>
+                <td>@font-feature-values</td>
+                <td>Cho phép tác giả sử dụng một tên chung trong font-variant-alternate đối với tính năng kích hoạt khác nhau trong OpenType</td>
+            </tbody>
+            <tbody>
+                <td>font</td>
+                <td>Đặt tất cả các thuộc tính font trong lời khai báo</td>
+            </tbody>
+            <tbody>
+                <td>font-family</td>
+                <td>Xác định họ phông chữ cho văn bản</td>
+            </tbody>
+            <tbody>
+                <td>font-feature-settings</td>
+                <td>Cho phép kiểm soát các tính năng về in tiên tiến trong OpenType fonts</td>
+            </tbody>
+            <tbody>
+                <td>font-kerning</td>
+                <td>Kiểm soát việc sử dụng các thông tin kerning (cách các từ cách nhau)</td>
+            </tbody>
+            <tbody>
+                <td>font-language-override</td>
+                <td>Kiểm soát việc sử dụng của ngôn ngữ cụ thể nét trạm (language-specific glyphs) trong kiểu chữ</td>
+            </tbody>
+            <tbody>
+                <td>font-size</td>
+                <td>Xác định kích thước phông chữ của đoạn văn</td>
+            </tbody>
+            <tbody>
+                <td>font-size-adjust</td>
+                <td>Duy trì khả năng đọc văn bản khi phông chữ dự phòng xuất hiện</td>
+            </tbody>
+            <tbody>
+                <td>font-stretch</td>
+                <td>Chọn kiểu normal, condensed,hoặc expanded từ họ phông chữ</td>
+            </tbody>
+            <tbody>
+                <td>font-style</td>
+                <td>Xác định kiểu chữ cho văn bản</td>
+            </tbody>
+            <tbody>
+                <td>font-synthesis</td>
+                <td>Quản lí các kiểu chữ (đậm hoặc nghiêng) có thể được tổng hợp bởi trình duyệt</td>
+            </tbody>
+            <tbody>
+                <td>font-variant</td>
+                <td>Xác định có hay không một văn bản được hiển thị với phông chữ small-caps</td>
+            </tbody>
+            <tbody>
+                <td>font-variant-alternates</td>
+                <td>Kiểm soát việc sử dụng các nét chạm thay thế liên quan đến việc thay tên được định nghĩa trong @font-feature-values</td>
+            </tbody>
+            <tbody>
+                <td>font-variant-caps</td>
+                <td>Kiểm soát việc sử dụng nét chạm (glyph)thay thế cho chữ in hoa</td>
+            </tbody>
+            <tbody>
+                <td>font-variant-east-asian</td>
+                <td>Kiểm soát việc sử dụng nét chạm (glyph ) thay thế cho các kịch bản Đông Á (ví dụ như Trung Quốc và Nhật Bản)</td>
+            </tbody>
+            <tbody>
+                <td>font-variant-ligatures</td>
+                <td>Kiểm soát các chữ ghép và các biểu mẫu theo ngữ cảnh được sử dụng trong các nội dung văn bản của phần tử mà nó được áp dụng</td>
+            </tbody>
+            <tbody>
+                <td>font-variant-numeric</td>
+                <td>Kiểm soát việc sử dụng các họa tiết (glyph) thay thế cho số, phân số và đánh dấu thứ tự</td>
+            </tbody>
+            <tbody>
+                <td>font-variant-position</td>
+                <td>Kiểm soát việc sử dụng các họa tiết thay thế kích thước nhỏ hơn vị trí như là chỉ số trên hoặc chỉ số dưới về đường cơ sở của các phông chữ</td>
+            </tbody>
+            <tbody>
+                <td>font-weight</td>
+                <td>Xác định độ đậm của phông chữ</td>
+            </tbody>
+        </table>
+
+        <h2>2. Thuộc Tính Writing Modes</h2>
+        <table border="1" cellpadding="100" cellspacing="1">
+            <thead>
+                <th>Thuộc Tính</th>
+                <th>Mô Tả Chức Năng</th>
+            </thead>
+            <tbody>
+                <td>direction</td>
+                <td>Xác định hướng văn bản/ hướng bài viết</td>
+            </tbody>
+            <tbody>
+                <td>text-orientation</td>
+                <td>Xác định hướng của văn bản trong một dòng</td>
+            </tbody>
+            <tbody>
+                <td>text-combine-upright</td>
+                <td>Xác định sự kết hợp của đa ký tự vào khoảng cách của ký tự đơn</td>
+            </tbody>
+            <tbody>
+                <td>unicode-bidi</td>
+                <td>Được sử dụng cùng với thuộc tính direction để đặt và trả về  cho dù văn bản nên được ghi đè để hỗ trợ nhiều ngôn ngữ trong cùng một tài liệu</td>
+            </tbody>
+            <tbody>
+                <td>writing-mode</td>
+                <td>Xác định liệu dòng văn bản được đặt ra theo chiều ngang hay chiều dọc hay hướng mà khối tiến tới</td>
+            </tbody>
+        </table>
+
+        <h2>3. Thuộc Tính Table</h2>
+        <table border="1" cellpadding="100" cellspacing="1">
+            <thead>
+                <th>Thuộc Tính</th>
+                <th>Mô Tả Chức Năng</th>
+            </thead>
+            <tbody>
+                <td>border-collapse</td>
+                <td>Xác định liệu có hay không đường viền của bảng nên tách biệt</td>
+            </tbody>
+            <tbody>
+                <td>border-spacing</td>
+                <td>Xác định khoảng cách giữa đường viền của các ô lân cận</td>
+            </tbody>
+            <tbody>
+                <td>caption-side</td>
+                <td>Xác định vị trí của một chú thích bảng</td>
+            </tbody>
+            <tbody>
+                <td>empty-cells</td>
+                <td>Xác định có hay không để hiển thị đường viền và nền trên ô trống trong một bảng</td>
+            </tbody>
+            <tbody>
+                <td>table-layout</td>
+                <td>Thiết lập thuật toán bố trí (layout algorithm) được sử dụng cho bảng</td>
+            </tbody>
+        </table>
+    
+        <h2>4. Thuộc Tính Lists & Counters</h2>
+        <table border="1" cellpadding="100" cellspacing="1">
+            <thead>
+                <th>Thuộc Tính</th>
+                <th>Mô Tả Chức Năng</th>
+            </thead>
+            <tbody>
+                <td>counter-increment</td>
+                <td>Gia tăng một hoặc nhiều counters</td>
+            </tbody>
+            <tbody>
+                <td>counter-reset</td>
+                <td>Tạo hoặc thiết lập lại một hay nhiều counters</td>
+            </tbody>
+            <tbody>
+                <td>list-style</td>
+                <td>Thiết lập tất cả các thuộc tính cho danh sách trong lời khai báo</td>
+            </tbody>
+            <tbody>
+                <td>list-style-image</td>
+                <td>Xác định một hình ảnh như đánh dấu mục danh </td>
+            </tbody>
+            <tbody>
+                <td>list-style-position</td>
+                <td>Xác định nếu đánh danh mục sẽ xuất hiện bên trong hoặc bên ngoài nội dung</td>
+            </tbody>
+            <tbody>
+                <td>list-style-type</td>
+                <td>Xác định loại của đánh dấu danh mục</td>
+            </tbody>
+        </table>
+        
+        <h2>5. Thuộc Tính Animation</h2>
+        <table border="1" cellpadding="100" cellspacing="1">
+            <thead>
+                <th>Thuộc Tính</th>
+                <th>Mô Tả Chức Năng</th>
+            </thead>
+            <tbody>
+                <td>@keyframes</td>
+                <td>Xác định mã animation</td>
+            </tbody>
+            <tbody>
+                <td>animation</td>
+                <td>Một thuộc tính viết tắt cho các thuộc tính animation  (ngoại trừ animation-play-state và animation-fill-mode)</td>
+            </tbody>
+            <tbody>
+                <td>animation-delay</td>
+                <td>Xác định sự chậm trễ đối với sự bắt đầu của một chuyển động của hình ảnh hoặc tag (animation)</td>
+            </tbody>
+            <tbody>
+                <td>animation-direction</td>
+                <td>Xác định có hay không các chuyển động nên chạy ngược lại trên chu kỳ thay thế</td>
+            </tbody>
+            <tbody>
+                <td>animation-duration</td>
+                <td>Xác định có bao nhiêu giây hoặc mili giây một chuyển động cần để hoàn thành một chu kỳ</td>
+            </tbody>
+            <tbody>
+                <td>animation-fill-mode</td>
+                <td>Xác định kiểu cho các phần tử khi các chuyển động không chạy (Khi nó dừng lại , hoặc khi nó bị trễ)</td>
+            </tbody>
+            <tbody>
+                <td>animation-iteration-count</td>
+                <td>Xác định số lần một chuyển động được thực hiện</td>
+            </tbody>
+            <tbody>
+                <td>animation-name</td>
+                <td>Xác định tên của @keyframes animation</td>
+            </tbody>
+            <tbody>
+                <td>animation-play-state</td>
+                <td>Xác định xem các chuyển động đang được chạy hay tạm dừng</td>
+            </tbody>
+            <tbody>
+                <td>animation-timing-function</td>
+                <td>Xác định tốc độ cong của một chuyển động của hình ảnh hoặc tag</td>
+            </tbody>
+        </table>
+
+        <h2>6. Thuộc Tính Trasitions</h2>
+        <table border="1" cellpadding="100" cellspacing="1">
+            <thead>
+                <th>Thuộc Tính</th>
+                <th>Mô Tả Chức Năng</th>
+            </thead>
+            <tbody>
+                <td>transition</td>
+                <td>Một thuộc tính viết tắt để thiết lập cho 4 thuộc tính chuyển đổi</td>
+            </tbody>
+            <tbody>
+                <td>transition-property</td>
+                <td>Xác định tên của thuộc tính CSS trong hiệu ứng của quá trình chuyển đổi(none, width, height, all)</td>
+            </tbody>
+            <tbody>
+                <td>transition-duration</td>
+                <td>Xác định bao nhiêu giây hoặc mili giây một hiệu ứng chuyển đổi hoàn thành</td>
+            </tbody>
+            <tbody>
+                <td>transition-timing-function</td>
+                <td>Xác định đường cong tốc độ của hiệu ứng chuyển đổi</td>
+            </tbody>
+            <tbody>
+                <td>transition-delay</td>
+                <td>Xác định khi nào hiệu ứng chuyển đổi sẽ bắt đầu</td>
+            </tbody>
+        </table>
+
+        <h2>7. Thuộc Tính Basic User Interface</h2>
+        <table border="1" cellpadding="100" cellspacing="1">
+            <thead>
+                <th>Thuộc Tính</th>
+                <th>Mô Tả Chức Năng</th>
+            </thead>
+            <tbody>
+                <td>box-sizing</td>
+                <td>Báo cho trình duyệt các thuộc tính sizing (độ rộng và độ cao) nên có</td>
+            </tbody>
+            <tbody>
+                <td>content</td>
+                <td>Sử dụng với :before và :after pseudo-elements, để chèn nội dung được tạo ra</td>
+            </tbody>
+            <tbody>
+                <td>cursor</td>
+                <td>Xác định kiểu con trỏ chuột sẽ được hiển thị khi di chuyển vào phần tử nào đó</td>
+            </tbody>
+            <tbody>
+                <td>ime-mode</td>
+                <td>Điều khiển trạng thái của trình soạn thảo phương thức nhập cho trường văn bản</td>
+            </tbody>
+            <tbody>
+                <td>nav-down</td>
+                <td>Xác định nơi để di chuyển khi sử dụng phím mũi tên xuống</td>
+            </tbody>
+            <tbody>
+                <td>nav-index</td>
+                <td>Xác định thứ tự tab của phần tử</td>
+            </tbody>
+            <tbody>
+                <td>nav-left</td>
+                <td>Xác định nơi để di chuyển khi sử dụng phím mũi tên sang trái</td>
+            </tbody>
+            <tbody>
+                <td>nav-right</td>
+                <td>Xác định nơi để di chuyển khi sử dụng phím mũi tên sang phải</td>
+            </tbody>
+            <tbody>
+                <td>nav-up</td>
+                <td>Xác định nơi để di chuyển khi sử dụng phím mũi tên lên</td>
+            </tbody>
+            <tbody>
+                <td>outline</td>
+                <td>Thiết lập thuộc tính đường viền trong lời khai báo</td>
+            </tbody>
+            <tbody>
+                <td>outline-color</td>
+                <td>Đặt màu sắc của đường viền bao ngoài</td>
+            </tbody>
+            <tbody>
+                <td>outline-offset</td>
+                <td>Đệm đường viền bao ngoài, và rút nó ra bên ngoài cạnh đường viền (border)</td>
+            </tbody>
+            <tbody>
+                <td>outline-style</td>
+                <td>Thiết lập kiểu của đường viền bao ngoài</td>
+            </tbody>
+            <tbody>
+                <td>outline-width</td>
+                <td>Thiết lập độ rộng của đường viền bao ngoài</td>
+            </tbody>
+            <tbody>
+                <td>resize</td>
+                <td>Xác định có hay không một phần tử là thay đổi kích thước bởi người dùng</td>
+            </tbody>
+            <tbody>
+                <td>text-overflow</td>
+                <td>Xác định các vấn đề khi văn bản tràn khỏi các phần tử container</td>
+            </tbody>
+        </table>
+
+        <h2>8. Thuộc Tính Multi-column Layout</h2>
+        <table border="1" cellpadding="100" cellspacing="1">
+            <thead>
+                <th>Thuộc Tính</th>
+                <th>Mô Tả Chức Năng</th>
+            </thead>
+            <tbody>
+                <td>break-after</td>
+                <td>Xác định cách xử lý ngắt trang, ngắt cột hoặc ngắt đoạn sau khi tạo hộp</td>
+            </tbody>
+            <tbody>
+                <td>break-before</td>
+                <td>Xác định cách xử lý ngắt trang, ngắt cột hoặc ngắt đoạn trước khi tạo hộp</td>
+            </tbody>
+            <tbody>
+                <td>break-inside</td>
+                <td>Xác định cách xử lý ngắt trang, ngắt cột hoặc ngắt đoạn bên trong hộp được tạo ra</td>
+            </tbody>
+            <tbody>
+                <td>column-count</td>
+                <td>Xác định số cột phần tử nên được chia thành</td>
+            </tbody>
+            <tbody>
+                <td>column-fill</td>
+                <td>Xác định như thế nào để điền vào cột</td>
+            </tbody>
+            <tbody>
+                <td>column-gap</td>
+                <td>Xác định khoảng cách giữa các cột</td>
+            </tbody>
+            <tbody>
+                <td>column-rule</td>
+                <td>Một thuộc tính viết tắt để thiết lập thuộc tính column-rule-* cho các đường kẻ giữa các cột</td>
+            </tbody>
+            <tbody>
+                <td>column-rule-color</td>
+                <td>Xác định màu sắc của các đường kẻ giữa các cột</td>
+            </tbody>
+            <tbody>
+                <td>column-rule-style</td>
+                <td>Xác định kiểu của các đường kẻ giữa các cột</td>
+            </tbody>
+            <tbody>
+                <td>column-rule-width</td>
+                <td>Xác định độ rộng của các đường kẻ giữa các cột</td>
+            </tbody>
+            <tbody>
+                <td>column-span</td>
+                <td>Xác định có bao nhiêu cột chứa phần tử được trải dài</td>
+            </tbody>
+            <tbody>
+                <td>column-width</td>
+                <td>Xác định độ rộng của cột</td>
+            </tbody>
+            <tbody>
+                <td>columns</td>
+                <td>Một thuộc tính viết tắt để thiết lập độ rộng cột (column-width) và số cột (column-count)</td>
+            </tbody>
+            <tbody>
+                <td>widows</td>
+                <td>Xác định số dòng tối thiểu phải còn lại trên một trang khi ngắt trang xảy ra bên trong phần tử</td>
+            </tbody>
+        </table>
+
+        <h2>9. Paged Media</h2>
+        <table border="1" cellpadding="100" cellspacing="1">
+            <thead>
+                <th>Thuộc Tính</th>
+                <th>Mô Tả Chức Năng</th>
+            </thead>
+            <tbody>
+                <td>orphans</td>
+                <td>Thiết lập số dòng tối thiểu phải còn lại ở cuối của một trang khi ngắt trang xảy ra bên trong phần tử</td>
+            </tbody>
+            <tbody>
+                <td>page-break-after</td>
+                <td>Thiết lập chế độ ngắt trang sau một phần tử</td>
+            </tbody>
+            <tbody>
+                <td>page-break-before</td>
+                <td>Thiết lập chế độ ngắt trang trước một phần tử</td>
+            </tbody>
+            <tbody>
+                <td>page-break-inside</td>
+                <td>Thiết lập chế độ ngắt trang bên trong một phần tử</td>
+            </tbody>
+        </table>
+
+        <h2>10. Generated Content cho trang đa phương tiện</h2>
+        <table border="1" cellpadding="100" cellspacing="1">
+            <thead>
+                <th>Thuộc Tính</th>
+                <th>Mô Tả Chức Năng </th>
+            </thead>
+            <tbody>
+                <td>marks</td>
+                <td>Thêm đoạn văn bản được đánh dấu và/hoặc sử dụng cho tài liệu</td>
+            </tbody>
+            <tbody>
+                <td>quotes</td>
+                <td>Thiết lập các loại dấu bao ngoài khi nhúng một trích dẫn</td>
+            </tbody>
+        </table>
+
+        <h2>11. Thuộc Tính Filter Effects</h2>
+        <table border="1" cellpadding="100" cellspacing="1">
+            <thead>
+                <th>Thuộc Tính</th>
+                <th>Mô Tả Chức Năng</th>
+            </thead>
+            <tbody>
+                <td>filter</td>
+                <td>Xác định hiệu ứng (vd: làm mờ hoặc chuyển đổi màu sắc) trên một phần tử trước khi nó được hiển thị</td>
+            </tbody>
+        </table>
+
+        <h2>12. Image Values & Replaced Content</h2>
+        <table border="1" cellpadding="100" cellspacing="1">
+            <thead>
+                <th>Thuộc Tính</th>
+                <th>Mô Tả Chức Năng</th>
+            </thead>
+            <tbody>
+                <td>image-orientation</td>
+                <td>Xác định sự quay theo bên phải hoặc theo chiều kim đồng hồ  do người dùng áp dụng cho một ảnh  (Thuộc tính này có khả năng bị phản đối và chức năng của nó chuyển sang cho HTML)</td>
+            </tbody>
+            <tbody>
+                <td>image-rendering</td>
+                <td>Gợi ý cho các trình duyệt về các khía cạnh của một ảnh là rất quan trọng để bảo vệ khi hình ảnh được thu nhỏ lại</td>
+            </tbody>
+            <tbody>
+                <td>image-resolution</td>
+                <td>Xác định độ phân giải nội tại của các ảnh raster được sử dụng trong/ trên phần tử</td>
+            </tbody>
+            <tbody>
+                <td>object-fit</td>
+                <td>Xác định làm thế nào nội dung của một phần tử thay thế  nên được trang bị hộp được tạo bởi độ cao và độ rộng</td>
+            </tbody>
+            <tbody>
+                <td>object-position</td>
+                <td>Xác định căn chỉnh của phần tử thay thế bên trong hộp của nó</td>
+            </tbody>
+        </table>
+
+        <h2>13. Thuộc Tính Speech</h2>
+        <table border="1" cellpadding="100" cellspacing="1">
+            <thead>
+                <th>Thuộc Tính</th>
+                <th>Mô Tả Chức Năng</th>
+            </thead>
+            <tbody>
+                <td>mark</td>
+                <td>Một thuộc tính viết tắt để thiết lập thuộc tính  mark-before và mark-after</td>
+            </tbody>
+            <tbody>
+                <td>mark-after</td>
+                <td>Cho phép đánh dấu tên được gắn liền với những dòng âm thanh</td>
+            </tbody>
+            <tbody>
+                <td>mark-before</td>
+                <td>Cho phép đánh dấu tên được gắn liền với những dòng âm thanh</td>
+            </tbody>
+            <tbody>
+                <td>phonemes</td>
+                <td>xác định cách phát âm cho các văn bản chứa các phần tử tương ứng</td>
+            </tbody>
+            <tbody>
+                <td>rest</td>
+                <td>Một thuộc tính viết tắt để thiết lập thuộc tính the rest-before và rest-after</td>
+            </tbody>
+            <tbody>
+                <td>rest-after</td>
+                <td>Xác định phần còn lại hoặc ranh giới điệu tính được quan sát sau khi nói phần tử nội dung</td>
+            </tbody>
+            <tbody>
+                <td>rest-before</td>
+                <td>Xác định phần còn lại hoặc ranh giới điệu tính để quan sát trước khi nói phần tử nội dung</td>
+            </tbody>
+            <tbody>
+                <td>voice-balance</td>
+                <td>Xác định sự cân bằng giữa các kênh trái và phải</td>
+            </tbody>
+            <tbody>
+                <td>voice-duration</td>
+                <td>Xác định nó phải mất bao lâu để trả lại các lựa chọn phần tử nội dung</td>
+            </tbody>
+            <tbody>
+                <td>voice-pitch</td>
+                <td>Xác định mức độ trung bình (tần số) của giọng nói</td>
+            </tbody>
+            <tbody>
+                <td>voice-pitch-range</td>
+                <td>Xác định sự thay đổi của tần số</td>
+            </tbody>
+            <tbody>
+                <td>voice-rate</td>
+                <td>Điều khiển tốc độ nói</td>
+            </tbody>
+            <tbody>
+                <td>voice-stress</td>
+                <td>Chỉ ra cường độ của sự nhấn mạnh được áp dụng</td>
+            </tbody>
+            <tbody>
+                <td>voice-volume</td>
+                <td>Đề cập đến biên độ của dạng sóng đầu ra của các bài phát biểu</td>
+            </tbody>
+        </table>
+
+        <h2>14. Thuộc Tính Marquee</h2>
+        <table border="1" cellpadding="100" cellspacing="1">
+            <thead>
+                <th>Thuộc Tính</th>
+                <th>Mô Tả Chức Năng</th>
+            </thead>
+            <tbody>
+                <td>marquee-direction</td>
+                <td>Thiết lập hướng di chuyển nội dung</td>
+            </tbody>
+            <tbody>
+                <td>marquee-play-count</td>
+                <td>Thiết lập bao nhiêu lần di chuyển nội dung</td>
+            </tbody>
+            <tbody>
+                <td>marquee-speed</td>
+                <td>Thiết lập cách nhanh chóng cuộn nội dung</td>
+            </tbody>
+            <tbody>
+                <td>marquee-style</td>
+                <td>Thiết lập kiểu di chuyển nội dung</td>
+            </tbody>
+        </table>
+    </div>
+    <div id="content-chill">
+        <div class="like">
+        </div>
+    </div>
+</body>
+</body>
+</html>
