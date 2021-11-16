@@ -111,7 +111,7 @@ table, th, td {
 #content-chill{
     width: 300px;
     height: 600px;
-    background-image: url('./img/Like.png');
+    background-image: url('https://i.postimg.cc/G29DQM91/Like.png');
     background-size: cover;
     position:fixed;
 }
