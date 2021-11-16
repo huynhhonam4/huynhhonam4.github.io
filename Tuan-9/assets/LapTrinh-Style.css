@@ -1,0 +1,512 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 96%;
+    height: 96vh;
+    background-image: url('https://i.postimg.cc/nckjbYv9/laptrinh-background.png');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+/* Begin: header */
+#header div{
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    height: 70px;
+}
+#nav ul li{
+    color: white;
+    list-style: none;
+    display: inline-block;
+    margin: 0px 30px;
+    font-size: 20px;
+    position: relative;
+}
+#nav ul, .logo{
+    cursor: pointer;
+}
+#nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+#nav ul li:hover::after{
+    width: 100%;
+}
+/* End: header */
+#background-content-1{
+    width: 835px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 10vw;
+    top: 13vw;
+    position: absolute;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+#content{
+    top: 50px;
+    left: 30px;
+    position: relative;
+    display: inline-block;
+}
+#content #text-khoa-hoc{
+    left: 330px;
+    top: -20px;
+    position: relative;
+}
+#content  #img-main{
+    width: 515px;
+    height: 258px;
+    background-image: url('https://i.postimg.cc/QtXJsxFj/Learn-HTML.png');
+    background-size: cover;
+    position: absolute;
+    border-radius: 10px;
+
+}
+#content .img-chill-right{
+    width: 250px;
+    height: 125px;
+    margin: 0px 5px 10px 525px;
+    background-image: url('./img/Learn\ HTML.png');
+    background-size: cover;
+    display: inline-flex; 
+    border-radius: 10px;
+
+}
+#content .background-reposive{
+    width: 250px;
+    height: 125px;
+    background-image: url('https://i.postimg.cc/NFVgBFfV/Learn-Reposive-Website.png');
+    background-size: cover;
+    border-radius: 10px;
+}
+#content .background-js{
+    width: 250px;
+    height: 125px;
+    background-image: url('https://i.postimg.cc/bvzjXk9r/Learn-Javascript.png');
+    background-size: cover;
+    border-radius: 10px;
+}
+#content .background-c{
+    width: 250px;
+    height: 125px;
+    background-image: url('https://i.postimg.cc/Prx47xDH/Learn-CS.png');
+    background-size: cover;
+    border-radius: 10px;
+}
+#content .img-chill-bot{
+    width: 250px;
+    height: 125px;
+    background-color: #ccc;
+    display: inline-flex;
+    margin: 0px 10px 0px 0px;
+    top: -135px;
+    position: relative;
+    border-radius: 10px;
+}
+#content .background-css-1{
+    width: 250px;
+    height: 125px;
+    background-image: url('https://i.postimg.cc/B6LYRnkt/Learn-CSS-1.png');
+    background-size: cover;
+    border-radius: 10px;
+}
+#content .background-css-2{
+    width: 250px;
+    height: 125px;
+    background-image: url('https://i.postimg.cc/9QmxCpK6/Learn-css-part2.png');
+    background-size: cover;
+    border-radius: 10px;
+}
+#content h2{
+    text-align: center;
+    height: 100%;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    opacity: 0.0;
+    transition: 0.3s;
+}
+#content h2:hover{
+    opacity: 0.8;
+}
+@media(max-width: 1024px){
+    body{
+        width: 100%;
+        height: 100vh;
+        background-image: url('https://i.postimg.cc/nckjbYv9/laptrinh-background.png');
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: right;
+    }
+    #nav ul li{
+        margin: 0px 10px;
+    }
+    #content #text-khoa-hoc{
+    left: 330px;
+    top: -20px;
+    position: relative;
+    display: inline-flex;
+    }
+}
+@media(max-width: 768px){
+    body{
+        width: 100%;
+        height: 100vh;
+        background-image: url('https://i.postimg.cc/nckjbYv9/laptrinh-background.png');
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center;
+    }
+    .logo{
+        height: 60px;
+    }
+    #nav ul li{
+        margin: 0px 5px;
+    }
+    #background-content-1{
+        width: 835px;
+        height: 500px;
+        background-color: rgba(0, 0, 0, 0.5);
+        left: 5vw;
+        top: 30vw;
+        position: absolute;
+        border-radius: 25px;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    }
+}
+@media(max-width: 800px){
+    body{
+        width: 100%;
+        height: 100vh;
+        background-image: url('https://i.postimg.cc/nckjbYv9/laptrinh-background.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    #nav ul li{
+        color: white;
+        list-style: none;
+        display: inline-block;
+        margin: 0px 7px;
+        font-size: 18px;
+        position: relative;
+    }
+    #background-content-1{
+        width: 700px;
+        height: 450px;
+        background-color: rgba(0, 0, 0, 0.5);
+        left: 5vw;
+        top: 30vw;
+        position: absolute;
+        border-radius: 25px;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    }
+    #content #text-khoa-hoc{
+        left: 250px;
+        top: -20px;
+        position: relative;
+    }
+    #content  #img-main{
+        width: 440px;
+        height: 220px;
+        background-image: url('https://i.postimg.cc/QtXJsxFj/Learn-HTML.png');
+        background-size: cover;
+        position: absolute;
+        border-radius: 10px;
+    
+    }
+    #content .img-chill-right{
+        width: 200px;
+        height: 130px;
+        margin: 0px 0px -15px 450px;
+        background-image: url('./img/Learn\ HTML.png');
+        background-size: cover;
+        display: inline-flex; 
+        border-radius: 10px;
+    
+    }
+    #content .background-reposive{
+        width: 200px;
+        height: 100px;
+        background-image: url('https://i.postimg.cc/NFVgBFfV/Learn-Reposive-Website.png');
+        background-size: cover;
+        border-radius: 10px;
+    }
+    #content .background-js{
+        width: 200px;
+        height: 100px;
+        background-image: url('https://i.postimg.cc/bvzjXk9r/Learn-Javascript.png');
+        background-size: cover;
+        border-radius: 10px;
+    }
+    #content .background-c{
+        width: 200px;
+        height: 100px;
+        background-image: url('https://i.postimg.cc/Prx47xDH/Learn-CS.png');
+        background-size: cover;
+        border-radius: 10px;
+    }
+    #content .img-chill-bot{
+        width: 200px;
+        height: 100px;
+        background-color: #ccc;
+        display: inline-flex;
+        margin: 0px 20px 0px 0px;
+        top: -115px;
+        position: relative;
+        border-radius: 10px;
+    }
+    #content .background-css-1{
+        width: 200px;
+        height: 100px;
+        background-image: url('https://i.postimg.cc/B6LYRnkt/Learn-CSS-1.png');
+        background-size: cover;
+        border-radius: 10px;
+    }
+    #content .background-css-2{
+        width: 200px;
+        height: 100px;
+        background-image: url('https://i.postimg.cc/9QmxCpK6/Learn-css-part2.png');
+        background-size: cover;
+        border-radius: 10px;
+    }
+}
+@media (max-width: 600px){
+    body{
+        width: 100%;
+        height: 120vh;
+        background-image: url('https://i.postimg.cc/Wb7z4YH9/background-600.png');
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center;
+    }
+    .logo{
+        height: 40px;
+        display: block;
+    }
+    #header div{
+        width: 100%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    #nav ul li{
+        color: #444;
+        list-style: none;
+        display: flex;
+        margin: 20px 0px;
+        font-size: 18px;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 100px;
+        height: 30px;
+        border-radius: 25px;
+        background-color: #fff;
+    }
+    #nav ul li::after{
+        content: '';
+        height: 3px;
+        width: 0%;
+        background-color: white;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        transition: 0.3s;
+    }
+
+
+    #background-content-1{
+        width: 500px;
+        height: 1550px;
+        background-color: rgba(0, 0, 0, 0.5);
+        left: 9vw;
+        top: 50vw;
+        position: absolute;
+        border-radius: 25px;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    }
+    #content #text-khoa-hoc{
+        left: 25vw;
+        top: -20px;
+        position: relative;
+    }
+    #content  #img-main{
+        width: 440px;
+        height: 220px;
+        background-image: url('https://i.postimg.cc/QtXJsxFj/Learn-HTML.png');
+        background-size: cover;
+        position: absolute;
+        border-radius: 10px;
+    
+    }
+    #content .img-chill-right{
+        width: 440px;
+        height: 220px;
+        margin: 20px 0px;
+        background-image: url('./img/Learn\ HTML.png');
+        background-size: cover;
+        top: 220px;
+        position: relative;
+        display: block; 
+        border-radius: 10px;
+    
+    }
+    #content .background-reposive{
+        width: 440px;
+        height: 220px;
+        background-image: url('https://i.postimg.cc/NFVgBFfV/Learn-Reposive-Website.png');
+        background-size: cover;
+        border-radius: 10px;
+    }
+    #content .background-js{
+        width: 440px;
+        height: 220px;
+        background-image: url('https://i.postimg.cc/bvzjXk9r/Learn-Javascript.png');
+        background-size: cover;
+        border-radius: 10px;
+    }
+    #content .background-c{
+        width: 440px;
+        height: 220px;
+        background-image: url('https://i.postimg.cc/Prx47xDH/Learn-CS.png');
+        background-size: cover;
+        border-radius: 10px;
+    }
+    #content .img-chill-bot{
+        width: 440px;
+        height: 220px;
+        background-color: #ccc;
+        display: block;
+        margin: 30px 0px;
+        top: 230px;
+        position: relative;
+        border-radius: 10px;
+    }
+    #content .background-css-1{
+        width: 440px;
+        height: 220px;
+        background-image: url('https://i.postimg.cc/B6LYRnkt/Learn-CSS-1.png');
+        background-size: cover;
+        border-radius: 10px;
+    }
+    #content .background-css-2{
+        width: 440px;
+        height: 220px;
+        background-image: url('https://i.postimg.cc/9QmxCpK6/Learn-css-part2.png');
+        background-size: cover;
+        border-radius: 10px;
+    }
+}
+
+@media (max-height: 480px){
+    body{
+        width: 100%;
+        height: 300vh;
+        background-image: url('https://i.postimg.cc/Wb7z4YH9/background-600.png');
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center;
+    }
+    #background-content-1{
+        width: 500px;
+        height: 1550px;
+        background-color: rgba(0, 0, 0, 0.5);
+        left: 9vw;
+        top: 50vw;
+        position: absolute;
+        border-radius: 25px;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    }
+    #content #text-khoa-hoc{
+        left: 25vw;
+        top: -20px;
+        position: relative;
+    }
+    #content  #img-main{
+        width: 440px;
+        height: 220px;
+        background-image: url('https://i.postimg.cc/QtXJsxFj/Learn-HTML.png');
+        background-size: cover;
+        position: absolute;
+        border-radius: 10px;
+    
+    }
+    #content .img-chill-right{
+        width: 440px;
+        height: 220px;
+        margin: 20px 0px;
+        background-image: url('./img/Learn\ HTML.png');
+        background-size: cover;
+        top: 220px;
+        position: relative;
+        display: block; 
+        border-radius: 10px;
+    
+    }
+    #content .background-reposive{
+        width: 440px;
+        height: 220px;
+        background-image: url('https://i.postimg.cc/NFVgBFfV/Learn-Reposive-Website.png');
+        background-size: cover;
+        border-radius: 10px;
+    }
+    #content .background-js{
+        width: 440px;
+        height: 220px;
+        background-image: url('https://i.postimg.cc/bvzjXk9r/Learn-Javascript.png');
+        background-size: cover;
+        border-radius: 10px;
+    }
+    #content .background-c{
+        width: 440px;
+        height: 220px;
+        background-image: url('https://i.postimg.cc/Prx47xDH/Learn-CS.png');
+        background-size: cover;
+        border-radius: 10px;
+    }
+    #content .img-chill-bot{
+        width: 440px;
+        height: 220px;
+        background-color: #ccc;
+        display: block;
+        margin: 30px 0px;
+        top: 230px;
+        position: relative;
+        border-radius: 10px;
+    }
+    #content .background-css-1{
+        width: 440px;
+        height: 220px;
+        background-image: url('https://i.postimg.cc/B6LYRnkt/Learn-CSS-1.png');
+        background-size: cover;
+        border-radius: 10px;
+    }
+    #content .background-css-2{
+        width: 440px;
+        height: 220px;
+        background-image: url('https://i.postimg.cc/9QmxCpK6/Learn-css-part2.png');
+        background-size: cover;
+        border-radius: 10px;
+    }
+}
+}
